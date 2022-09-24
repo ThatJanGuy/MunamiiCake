@@ -308,7 +308,7 @@ a:hover {
 #header-image {
     display: inline;
     width: 45vw;
-    background-image: url("header_cake.png");
+    background-image: url("../header_cake.png");
     background-position:center;
     background-size: cover;
     padding: 0;
