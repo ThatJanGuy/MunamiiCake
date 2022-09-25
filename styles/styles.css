@@ -259,50 +259,49 @@ body{
 }
 
 header {
-    width: 100%;
+  width: 100%;
 }
 
 main {
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 nav {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav a, 
 nav li, 
 nav {
-    /* display: inline-block; */
-    font-size: 1.3rem;
-    font-weight: 900;
-    text-decoration: none;
-    list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 nav li {
-    padding: .3rem;
+  padding: .3rem;
 }
 
 a {
-    color: #191919;
+  color: #191919;
 }
 
 a:hover {
-    text-decoration:underline;
+  text-decoration:underline;
 }
 
 .header-container {
-    display: flex;
-    flex-direction: row;
-    height: 70vh;
-    min-height: 500px;
-    max-height: 900px;
-    padding: 0;
-    margin: auto;
-    background: linear-gradient(180deg, white, rgb(255, 229, 235) 100%);
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 900px;
+  padding: 0;
+  margin: auto;
+  background: linear-gradient(180deg, white, rgb(255, 229, 235) 100%);
 }
 
 #header-image {
@@ -425,44 +424,85 @@ header {
     text-align: left;
 }
 
-  .block {
-    display: block;
-    width: 100%;
-    border: 0;
-    height: 2rem;
-  }
-  
-  form{
-    border: 1px solid black;
-  }
+.block {
+  display: block;
+  width: 100%;
+  border: 0;
+  height: 2rem;
+}
 
-  input {
-    margin: 0.3rem 0 .5rem 0;
-  }
-  
-  textarea {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  fieldset {
-    border: none;
-  }
-  
-  label {
-    display: block;
-    margin: 0.5rem 0;
-  }
+form{
+  border: 1px solid black;
+  margin-bottom: 3rem;
+  text-align: left;;
+}
 
-  #submitButton{
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    font-weight: 900;
-    background-color: #CAD178;
-    padding: 10px;
-    border: none;
-    display:none;
-  }
+input {
+  margin: 0.3rem 0 .5rem 0;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#submitButton{
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: #CAD178;
+  padding: 10px;
+  border: none;
+  display:none;
+}
+
+footer{
+  /* margin-top:50px; */
+  padding:.3rem 0 1rem 0;
+  text-align: center;
+  background-color: #733048;
+  margin:auto;
+  color:rgb(255, 229, 235);
+}
+
+footer a{
+  color:rgb(255, 229, 235);
+
+}
+
+#socialMedia{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background-color: #ffffff; */
+  margin-top: -1rem;
+}
+
+#facebook{
+  height:50px;
+  margin: .5rem;
+}
+
+#facebookLogo{
+  height:30px;
+}
+
+#instagram{
+  margin: .5rem;
+}
+
+#instagramLogo{
+  height:30px;
+}
