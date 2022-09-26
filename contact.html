@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Munamii Cake</title>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAYgD/ABcC0QDYv/8AqIvWAM2t/wDVuv8A4c//ABQAxAB6rMIAapuwALig3gCUcMwAR4mmABoA/wAAAAAAAAAAAAAAAAAAANnZqQAAAAAN2dmp0AAAAJ2pqandAAAJmqmpqd2QAA2amqmqmtAACpqaqaqapgAKmpd6qpqmAFp6lVN616ZgV2N1VEY2dVBVtVVVVlVFUAtVtVVVS1UAAGdbzLtWAAAABjUoxmAAAAAAAeLgAAAAAAAAEQAAAAD//wAA8D8AAOAfAADADwAAgAcAAIAHAACAAwAAgAMAAAABAAAAAQAAAAEAAIADAADADwAA4B8AAPh/AAD8/wAA" rel="icon" type="image/x-icon" />
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAYgD/ABcC0QDYv/8AqIvWAM2t/wDVuv8A4c//ABQAxAB6rMIAapuwALig3gCUcMwAR4mmABoA/wAAAAAAAAAAAAAAAAAAANnZqQAAAAAN2dmp0AAAAJ2pqandAAAJmqmpqd2QAA2amqmqmtAACpqaqaqapgAKmpd6qpqmAFp6lVN616ZgV2N1VEY2dVBVtVVVVlVFUAtVtVVVS1UAAGdbzLtWAAAABjUoxmAAAAAAAeLgAAAAAAAAEQAAAAD//wAA8D8AAOAfAADADwAAgAcAAIAHAACAAwAAgAMAAAABAAAAAQAAAAEAAIADAADADwAA4B8AAPh/AAD8/wAA"
+        rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <div id="header-image">
             </div>
-            <div id="logo-and-welcome">
+            <div id="logo-and-nav-container">
                 <img id="logo" src="images/logo.png" alt="The logo.">
                 <nav>
                     <div id="navigation">
                         <ul>
-                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)" href="index.html"> Home </a> </li>
-                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)" href="products.html"> Products</a> </li>
-                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)" href="about.html"> About</a> </li>
-                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)" href="contact.html"> Contact <</a></li>
+                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)"
+                                    href="index.html"> Home </a>
+                            </li>
+                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)"
+                                    href="products.html"> Products</a> </li>
+                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)"
+                                    href="about.html"> About</a> </li>
+                            <li><a onmouseover="mouseOverNav.call(this)" onmouseout="mouseOutNav.call(this)"
+                                    href="contact.html"> Contact < </a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </nav>
             </div>
         </div>
@@ -32,37 +41,54 @@
         <h1>Get in Contact!</h1>
 
         <p class="aboutText">If you want to reach out, plase send us an email at
-            <a href="#" onclick="alert('This should be a mailto: link, but it\'s still a demo. So, no mailing allowed. :)')">noemail@just.fake</a>. Or...
+            <a href="#"
+                onclick="alert('This should be a mailto: link, but it\'s still a demo. So, no mailing allowed. :)')">noemail@just.fake</a>.
+            Or...
         </p>
         <h2>Use our fancy form!</h2>
         <form id="email-form">
             <fieldset id="personalData">
-              <label for="name" id="name-label">Name <input class="block" required id="name" type="text" placeholder="Enter your name"/></label>
-              <label for="email" id="email-label">Email <input required class="block" id="email" type="email" placeholder="Enter your Email" /></label>
+                <label for="name" id="name-label">Name <input class="block" required id="name" type="text"
+                        placeholder="Enter your name" /></label>
+                <label for="email" id="email-label">Email <input required class="block" id="email" type="email"
+                        placeholder="Enter your Email" /></label>
             </fieldset>
             <fieldset>
-              <h2>What is your request about?</h2>
-              <label for="cakes" ><input checked type="radio" name="topic" id="cakes" value="cakes"/> Cakes</label>
-                <label for="cupcakes" ><input type="radio" name="topic" id="cupcakes" value="cupcakes"/> Cupcakes </label>
-                <label for="websites" ><input type="radio" name="topic" id="websites" value="websites"/> Websites </label>
+                <h2>What is your request about?</h2>
+                <label for="cakes"><input checked type="radio" name="topic" id="cakes" value="cakes" /> Cakes</label>
+                <label for="cupcakes"><input type="radio" name="topic" id="cupcakes" value="cupcakes" /> Cupcakes
+                </label>
+                <label for="websites"><input type="radio" name="topic" id="websites" value="websites" /> Websites
+                </label>
             </fieldset>
             <fieldset>
-              <p>Tell us your story
-              <textarea id="message" name="message" rows="10" cols="60" placeholder="Your message"></textarea>
-              <label for="gdpr"><input onclick="gdprCheck()" id="gdprCheckbox" type="checkbox" name="gdpr" value="accepted" required/> Please check this box so that we can do whatever we want with your ip address and email. Long live the GDPR! Oh yeah. It's mandatory if you want to send a message.</label>
+                <p>Tell us your story
+                    <textarea id="message" name="message" rows="10" cols="60" placeholder="Your message"></textarea>
+                    <label for="gdpr"><input onclick="gdprCheck()" id="gdprCheckbox" type="checkbox" name="gdpr"
+                            value="accepted" required /> Please check this box so that we can do whatever we want with
+                        your ip address and email. Long live the GDPR! Oh yeah. It's mandatory if you want to send a
+                        message.</label>
             </fieldset>
-            <button id="submitButton" onclick="alert('Come on. By now you should no that no button does anything. :\)')" >Submit</button>
-          </form>
+            <button id="submitButton"
+                onclick="alert('Come on. By now you should no that no button does anything. :\)')">Submit</button>
+        </form>
 
     </main>
     <footer>
         <h3>Follow us on social media</h3>
         <div id="socialMedia">
-            <div id="instagram" onclick="alert('This is as far as I\'m willing to go before I really have to start thinking about the GDPR.')"><img id="instagramLogo" src="images/instagramLogo.png" alt="The instagram logo."></div>
-            <div id="facebook" onclick="alert('This is as far as I\'m willing to go before I really have to start thinking about the GDPR.')"><img id="facebookLogo" src="images/fbLogo.png" alt="The facebook logo."></div>
+            <div id="instagram"
+                onclick="alert('This is as far as I\'m willing to go before I really have to start thinking about the GDPR.')">
+                <img id="instagramLogo" src="images/instagramLogo.png" alt="The instagram logo."></div>
+            <div id="facebook"
+                onclick="alert('This is as far as I\'m willing to go before I really have to start thinking about the GDPR.')">
+                <img id="facebookLogo" src="images/fbLogo.png" alt="The facebook logo."></div>
         </div>
-        <div><a href="#" onclick="alert('This should be a mailto: link, but it\'s still a demo. So, no mailing allowed. :)')">noemail@just.fake</a></div>
+        <div><a href="#"
+                onclick="alert('This should be a mailto: link, but it\'s still a demo. So, no mailing allowed. :)')">noemail@just.fake</a>
+        </div>
     </footer>
     <script type="text/javascript" src="scripts/scripts.js"></script>
 </body>
+
 </html>
